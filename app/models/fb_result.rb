@@ -1,0 +1,2 @@
+class FbResult < ApplicationRecord
+end
