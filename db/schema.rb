@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20160705220530) do
   create_table "fb_results", force: :cascade do |t|
     t.integer  "sequence_number"
     t.integer  "result"
-    t.time     "recursive_time"
-    t.time     "loop_time"
+    t.decimal  "recursive_time"
+    t.decimal  "loop_time"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end

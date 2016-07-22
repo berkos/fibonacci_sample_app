@@ -1,0 +1,7 @@
+h3 Fibonacci Series
+
+= form_tag('/fibonacci', method: 'post', multipart: true)
+
+  div Enter a non-negative number
+  = text_field_tag(:number)
+  = submit_tag('Calculate')

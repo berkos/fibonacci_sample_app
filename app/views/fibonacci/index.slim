@@ -1,0 +1,19 @@
+h3 Fibonacci Results
+
+= button_to 'New', new_fibonacci_path, method: :get
+table
+  thead
+    tr
+      th #
+      th Sequence number
+      th result
+      th recursive time
+      th loop time
+  tbody
+      - @results.each do |result|
+        tr
+          td = result.id
+          td = result.sequence_number
+          td = result.result
+          td = result.recursive_time.to_f
+          td = result.loop_time.to_f
