@@ -14,8 +14,7 @@ class FibonacciProducer
   end
 
   def call
-    Hutch.connect
-    Hutch.publish('sample_app.fibonacci', { number: number })
+    FibonacciSequenceJob.perform_async(number)
   end
 
   private
