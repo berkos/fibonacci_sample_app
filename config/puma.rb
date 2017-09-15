@@ -15,6 +15,17 @@ port        ENV.fetch("PORT") { 3000 }
 #
 environment ENV.fetch("RAILS_ENV") { "development" }
 
+
+
+# Set master PID and state locations
+pidfile "/home/ubuntu/fibonacci_sample_app/pids/puma.pid"
+state_path "/home/ubuntu/fibonacci_sample_app/pids/puma.state"
+
+
+
+# Set up socket location
+bind "unix:/home/ubuntu/fibonacci_sample_app/sockets/puma.sock"
+
 # Specifies the number of `workers` to boot in clustered mode.
 # Workers are forked webserver processes. If using threads and workers together
 # the concurrency of the application would be max `threads` * `workers`.
