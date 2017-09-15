@@ -12,9 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20160705220530) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "fb_results", force: :cascade do |t|
     t.integer  "sequence_number"
     t.integer  "result"
