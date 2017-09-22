@@ -4,7 +4,6 @@ h3 Fibonacci Results
 table
   thead
     tr
-      th #
       th Sequence number
       th result
       th recursive time
@@ -12,8 +11,8 @@ table
   tbody
       - @results.each do |result|
         tr
-          td = result.id
           td = result.sequence_number
           td = result.result
-          td = result.recursive_time.to_f
-          td = result.loop_time.to_f
+          td = result.recursive_time
+          td = result.loop_time
+
